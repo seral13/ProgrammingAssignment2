@@ -1,0 +1,5 @@
+source("cachematrix.R")
+x <- rbind(c(1, -1/4), c(-1/4, 1))
+m <- makeCacheMatrix(x)
+m$get()
+cacheSolve(m)
